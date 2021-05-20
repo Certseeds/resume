@@ -1,0 +1,50 @@
+\NeedsTeXFormat{LaTeX2e}[2020/02/02]
+\ProvidesPackage{sty/fonts/cn}[2021/05/20]
+
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+
+% https://github.com/boathit/CTEX/blob/master/texmf/tex/latex/ctex/fontset/ctex-xecjk-adobefonts.def
+% ctex-xecjk-adobefonts.def: Adobe 的 xeCJK 字体设置，为 Adobe 的四套字体
+% vim:ft=tex
+
+
+% \defaultfontfeatures{Path = fonts/zh_CN-Adobe/, Mapping=tex-text}
+
+\setCJKmainfont[
+Path = fonts/source_han_serif/,
+Extension = .otf ,
+UprightFont = *-Regular ,
+BoldFont=*-Bold,
+ItalicFont=AdobeKaitiStd-Regular,
+BoldItalicFont=AdobeKaitiStd-Regular,
+]{SourceHanSerifSC}
+
+\setCJKsansfont[
+Path = fonts/source_han_sans/,
+Extension = .otf ,
+UprightFont = *-Regular ,
+BoldFont=*-Bold,
+]{SourceHanSansSC}
+
+\setCJKmonofont[Path = fonts/adobe_zh_cn/]{AdobeFangsongStd-Regular.otf}
+
+% \setCJKfamilyfont{zhsong}{AdobeSongStd-Light.otf}
+
+
+% \setCJKfamilyfont{zhfs}{AdobeFangsongStd-Regular.otf}
+% \setCJKfamilyfont{zhkai}{AdobeKaitiStd-Regular.otf}
+
+\newcommand{\粗体}{\textbf}
+\newcommand{\斜体}[1]{\textit{#1}}
+
+\newcommand{\楷体}{\CJKfontspec[Path=fonts/source_han_serif/]{AdobeKaitiStd-Regular.otf}}
+\newcommand{\宋体}{\rmfamily}
+\newcommand{\黑体}{\sffamily}
+\newcommand{\仿宋}{\ttfamily}
+
+% \renewcommand{\heiti}{\CJKfontspec[Path=fonts/source_hans_sans/]{SourceHanSansSC-Regular.otf}}
+% \newcommand{\黑体}{\heiti}
+
+%\setCJKfamilyfont{sourcehansans}[]{}
+%\newcommand*{\黑体}{\CJKfamily{\sourcehansans}}
