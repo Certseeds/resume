@@ -15,12 +15,12 @@
 % loading fonts
 \RequirePackage{sty/fonts/en}
 \RequirePackage{sty/fonts/cn}
+\RequirePackage{sty/fonts/awesome}
 \RequirePackage{sty/zihao}
 \RequirePackage{sty/pageupdown}
 \RequirePackage{sty/command}
 \RequirePackage{sty/school}
 \RequirePackage{hyperref}
-\RequirePackage{fontawesome}
 \RequirePackage[
 	a4paper,
 	left=0.7in,
